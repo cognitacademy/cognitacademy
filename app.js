@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
     //console.log('Received event:', JSON.stringify(event, null, 2));
 
     // Get the object from the event and show its content type
-    const bucket = event.Records[0].s3.bucket.name;
+    const bucket = //bucketName
     const key = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, ' '));
     const params = {
         Bucket: bucket,
